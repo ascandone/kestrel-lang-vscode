@@ -1,0 +1,169 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "MiniRust",
+  "patterns": [
+    {
+      "include": "#comments"
+    },
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#constant"
+    },
+    {
+      "include": "#entity"
+    }
+  ],
+  "repository": {
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.mini-rust",
+          "match": "\\b(as|use|case|if|fn|import|let|assert|pub|type|opaque|const|todo|panic)\\b"
+        },
+        {
+          "name": "keyword.operator.arrow.mini-rust",
+          "match": "(<\\-|\\->)"
+        },
+        {
+          "name": "keyword.operator.pipe.mini-rust",
+          "match": "\\|>"
+        },
+        {
+          "name": "keyword.operator.splat.mini-rust",
+          "match": "\\.\\."
+        },
+        {
+          "name": "keyword.operator.comparison.float.mini-rust",
+          "match": "(<=\\.|>=\\.|==\\.|!=\\.|<\\.|>\\.)"
+        },
+        {
+          "name": "keyword.operator.comparison.int.mini-rust",
+          "match": "(<=|>=|==|!=|<|>)"
+        },
+        {
+          "name": "keyword.operator.logical.mini-rust",
+          "match": "(&&|\\|\\|)"
+        },
+        {
+          "name": "keyword.operator.string.mini-rust",
+          "match": "<>"
+        },
+        {
+          "name": "keyword.operator.other.mini-rust",
+          "match": "\\|"
+        },
+        {
+          "name": "keyword.operator.arithmetic.float.mini-rust",
+          "match": "(\\+\\.|\\-\\.|/\\.|\\*\\.|%\\.)"
+        },
+        {
+          "name": "keyword.operator.arithmetic.int.mini-rust",
+          "match": "(\\+|\\-|/|\\*|%)"
+        },
+        {
+          "name": "keyword.operator.assignment.mini-rust",
+          "match": "="
+        }
+      ]
+    },
+    "strings": {
+      "name": "string.quoted.double.mini-rust",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.mini-rust",
+          "match": "\\\\."
+        }
+      ]
+    },
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.mini-rust",
+          "match": "//.*"
+        }
+      ]
+    },
+    "constant": {
+      "patterns": [
+        {
+          "include": "#binary_number"
+        },
+        {
+          "include": "#octal_number"
+        },
+        {
+          "include": "#hexadecimal_number"
+        },
+        {
+          "include": "#decimal_number"
+        },
+        {
+          "include": "#boolean"
+        },
+        {
+          "name": "entity.name.type.mini-rust",
+          "match": "[[:upper:]][[:word:]]*"
+        }
+      ]
+    },
+    "binary_number": {
+      "name": "constant.numeric.binary.mini-rust",
+      "match": "\\b0b[0-1]+\\b",
+      "patterns": []
+    },
+    "octal_number": {
+      "name": "constant.numeric.octal.mini-rust",
+      "match": "\\b0o[0-7]+\\b",
+      "patterns": []
+    },
+    "decimal_number": {
+      "name": "constant.numeric.decimal.mini-rust",
+      "match": "\\b[[:digit:]][[:digit:]_]*(\\.[[:digit:]]*)?\\b",
+      "patterns": []
+    },
+    "hexadecimal_number": {
+      "name": "constant.numeric.hexadecimal.mini-rust",
+      "match": "\\b0x[[:xdigit:]]+\\b",
+      "patterns": []
+    },
+    "boolean": {
+      "name": "constant.language.boolean.mini-rust",
+      "match": "\\b(True|False)\\b",
+      "patterns": []
+    },
+    "entity": {
+      "patterns": [
+        {
+          "begin": "\\b([[:lower:]][[:word:]]*)([[:space:]]*)?\\(",
+          "end": "\\)",
+          "patterns": [
+            {
+              "include": "$self"
+            }
+          ],
+          "captures": {
+            "1": {
+              "name": "entity.name.function.mini-rust"
+            }
+          }
+        },
+        {
+          "name": "variable.parameter.mini-rust",
+          "match": "\\b([[:lower:]][[:word:]]*):\\s"
+        },
+        {
+          "name": "entity.name.namespace.mini-rust",
+          "match": "\\b([[:lower:]][[:word:]]*):"
+        }
+      ]
+    }
+  },
+  "scopeName": "source.mini-rust"
+}

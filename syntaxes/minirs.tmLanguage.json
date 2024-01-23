@@ -23,7 +23,7 @@
       "patterns": [
         {
           "name": "keyword.control.mini-rust",
-          "match": "\\b(if|else|fn|let|pub|type)\\b"
+          "match": "\\b(if|else|fn|let|pub|type|match)\\b"
         },
         {
           "name": "keyword.operator.arrow.mini-rust",

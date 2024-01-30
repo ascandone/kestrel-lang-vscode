@@ -1,6 +1,6 @@
 {
-  "name": "mini-rust-lsp",
-  "displayName": "MiniRust Language Client",
+  "name": "kestrel-vscode",
+  "displayName": "Kestrel Language Client",
   "description": "",
   "version": "0.0.1",
   "engines": {
@@ -16,26 +16,26 @@
   "contributes": {
     "languages": [
       {
-        "id": "mini-rs",
+        "id": "kestrel",
         "aliases": [
-          "MiniRust"
+          "Kestrel"
         ],
         "extensions": [
-          ".mrs"
+          ".ks"
         ],
         "configuration": "./language-configuration.json"
       }
     ],
     "grammars": [
       {
-        "language": "mini-rs",
-        "scopeName": "source.mini-rust",
-        "path": "./syntaxes/minirs.tmLanguage.json"
+        "language": "kestrel",
+        "scopeName": "source.kestrel",
+        "path": "./syntaxes/kestrel.tmLanguage.json"
       }
     ],
     "commands": [
       {
-        "command": "mini-rust-lsp.helloWorld",
+        "command": "kestrel-lsp.helloWorld",
         "title": "Hello World"
       }
     ]

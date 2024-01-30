@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-  "name": "MiniRust",
+  "name": "Kestrel",
   "patterns": [
     {
       "include": "#comments"
@@ -22,62 +22,62 @@
     "keywords": {
       "patterns": [
         {
-          "name": "keyword.control.mini-rust",
+          "name": "keyword.control.kestrel",
           "match": "\\b(if|else|fn|let|pub|import|extern|type|match)\\b"
         },
         {
-          "name": "keyword.operator.arrow.mini-rust",
+          "name": "keyword.operator.arrow.kestrel",
           "match": "(<\\-|\\->)"
         },
         {
-          "name": "keyword.operator.pipe.mini-rust",
+          "name": "keyword.operator.pipe.kestrel",
           "match": "\\|>"
         },
         {
-          "name": "keyword.operator.splat.mini-rust",
+          "name": "keyword.operator.splat.kestrel",
           "match": "\\.\\."
         },
         {
-          "name": "keyword.operator.comparison.float.mini-rust",
+          "name": "keyword.operator.comparison.float.kestrel",
           "match": "(<=\\.|>=\\.|==\\.|!=\\.|<\\.|>\\.)"
         },
         {
-          "name": "keyword.operator.comparison.int.mini-rust",
+          "name": "keyword.operator.comparison.int.kestrel",
           "match": "(<=|>=|==|!=|<|>)"
         },
         {
-          "name": "keyword.operator.logical.mini-rust",
+          "name": "keyword.operator.logical.kestrel",
           "match": "(&&|\\|\\|)"
         },
         {
-          "name": "keyword.operator.string.mini-rust",
+          "name": "keyword.operator.string.kestrel",
           "match": "<>"
         },
         {
-          "name": "keyword.operator.other.mini-rust",
+          "name": "keyword.operator.other.kestrel",
           "match": "\\|"
         },
         {
-          "name": "keyword.operator.arithmetic.float.mini-rust",
+          "name": "keyword.operator.arithmetic.float.kestrel",
           "match": "(\\+\\.|\\-\\.|/\\.|\\*\\.|%\\.)"
         },
         {
-          "name": "keyword.operator.arithmetic.int.mini-rust",
+          "name": "keyword.operator.arithmetic.int.kestrel",
           "match": "(\\+|\\-|/|\\*|%)"
         },
         {
-          "name": "keyword.operator.assignment.mini-rust",
+          "name": "keyword.operator.assignment.kestrel",
           "match": "="
         }
       ]
     },
     "strings": {
-      "name": "string.quoted.double.mini-rust",
+      "name": "string.quoted.double.kestrel",
       "begin": "\"",
       "end": "\"",
       "patterns": [
         {
-          "name": "constant.character.escape.mini-rust",
+          "name": "constant.character.escape.kestrel",
           "match": "\\\\."
         }
       ]
@@ -85,7 +85,7 @@
     "comments": {
       "patterns": [
         {
-          "name": "comment.line.mini-rust",
+          "name": "comment.line.kestrel",
           "match": "//.*"
         }
       ]
@@ -99,13 +99,13 @@
           "include": "#boolean"
         },
         {
-          "name": "entity.name.type.mini-rust",
+          "name": "entity.name.type.kestrel",
           "match": "[[:upper:]][[:word:]]*"
         }
       ]
     },
     "decimal_number": {
-      "name": "constant.numeric.decimal.mini-rust",
+      "name": "constant.numeric.decimal.kestrel",
       "match": "\\b[[:digit:]][[:digit:]_]*(\\.[[:digit:]]*)?\\b",
       "patterns": []
     },
@@ -121,20 +121,20 @@
           ],
           "captures": {
             "1": {
-              "name": "entity.name.function.mini-rust"
+              "name": "entity.name.function.kestrel"
             }
           }
         },
         {
-          "name": "variable.parameter.mini-rust",
+          "name": "variable.parameter.kestrel",
           "match": "\\b([[:lower:]][[:word:]]*):\\s"
         },
         {
-          "name": "entity.name.namespace.mini-rust",
+          "name": "entity.name.namespace.kestrel",
           "match": "\\b([[:lower:]][[:word:]]*):"
         }
       ]
     }
   },
-  "scopeName": "source.mini-rust"
+  "scopeName": "source.kestrel"
 }

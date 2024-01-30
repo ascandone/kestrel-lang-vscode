@@ -4,7 +4,7 @@ import * as vscode from "vscode";
 import { LanguageClient } from "vscode-languageclient/node";
 
 const executable = {
-  command: "mini-rs",
+  command: "kestrel",
   args: ["lsp", "--", "--stdio"],
 };
 
@@ -17,14 +17,14 @@ const clientOptions = {
   documentSelector: [
     {
       scheme: "file",
-      language: "mini-rs",
+      language: "kestrel",
     },
   ],
 };
 
 const client = new LanguageClient(
-  "mini-rs-language-server",
-  "MiniRust language client",
+  "kestrel-lang-language-server",
+  "Kestrel language client",
   serverOptions,
   clientOptions
 );

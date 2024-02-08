@@ -21,7 +21,7 @@
           "Kestrel"
         ],
         "extensions": [
-          ".ks"
+          ".kes"
         ],
         "configuration": "./language-configuration.json"
       }
@@ -33,12 +33,7 @@
         "path": "./syntaxes/kestrel.tmLanguage.json"
       }
     ],
-    "commands": [
-      {
-        "command": "kestrel-lsp.helloWorld",
-        "title": "Hello World"
-      }
-    ]
+    "commands": []
   },
   "scripts": {
     "package": "vsce package",

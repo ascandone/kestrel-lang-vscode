@@ -3,6 +3,7 @@
   "displayName": "Kestrel Language Client",
   "description": "Language support for Kestrel lang",
   "version": "0.0.1",
+  "publisher": "kestrel-lang",
   "repository": {
     "type": "git",
     "url": "https://github.com/ascandone/kestrel-lang-vscode"

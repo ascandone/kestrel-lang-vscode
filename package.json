@@ -1,17 +1,19 @@
 {
   "name": "kestrel-vscode",
   "displayName": "Kestrel Language Client",
-  "description": "",
+  "description": "Language support for Kestrel lang",
   "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ascandone/kestrel-lang-vscode"
+  },
   "engines": {
     "vscode": "^1.85.0"
   },
   "categories": [
     "Other"
   ],
-  "activationEvents": [
-    "onLanguage:plaintext"
-  ],
+  "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
     "languages": [

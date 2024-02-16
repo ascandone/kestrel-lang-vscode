@@ -1,3 +1,3 @@
-# mini-rust-lsp
+# Kestrel lang vscode
 
-TODO write readme
+Vscode extension for [Kestrel lang](https://github.com/ascandone/kestrel-lang)

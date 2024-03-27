@@ -36,7 +36,13 @@
         "path": "./syntaxes/kestrel.tmLanguage.json"
       }
     ],
-    "commands": []
+    "commands": [
+      {
+        "command": "kestrel.restartServer",
+        "title": "Restart Kestrel Server",
+        "category": "Kestrel"
+      }
+    ]
   },
   "scripts": {
     "package": "vsce package",

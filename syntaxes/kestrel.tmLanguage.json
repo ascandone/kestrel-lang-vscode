@@ -132,6 +132,14 @@
         {
           "name": "entity.name.namespace.kestrel",
           "match": "\\b([[:lower:]][[:word:]]*):"
+        },
+        {
+          "match": "\\b_([\\w]+[?!]?)",
+          "name": "comment.unused.kestrel"
+        },
+        {
+          "match": "\\b_\\b",
+          "name": "comment.wildcard.kestrel"
         }
       ]
     }

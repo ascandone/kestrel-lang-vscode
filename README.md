@@ -4,28 +4,34 @@ Vscode extension for [Kestrel lang](https://github.com/ascandone/kestrel-lang)
 
 ### Functionalities
 
-**Error diagnostics**
+#### Error diagnostics
+
 ![hover](./docs/err-diagnostics.png)
 
-**Warning diagnostics**
+#### Warning diagnostics
+
 ![hover](./docs/warning-diagnostics.png)
 
-**Code lens showing values types**
+#### Code lens showing values types
+
 ![hover](./docs/lens.png)
 
-**Information on mouse hover**
+#### Information on mouse hover
+
 ![hover](./docs/hover.png)
 
-**Autocomplete**
+#### Autocomplete
+
 ![hover](./docs/autocomplete.png)
 
-**Function paramter hints**
+#### Function paramter hints
+
 ![hover](./docs/parameter-hints.png)
 
-**Go to definition**
+#### Go to definition
 
-**Variables rename**
+#### Variables rename
 
-**Find usages of values**
+#### Find usages of values
 
-**Format on save**
+#### Format on save

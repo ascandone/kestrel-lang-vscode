@@ -26,7 +26,7 @@
       "patterns": [
         {
           "name": "keyword.control.kestrel",
-          "match": "\\b(if|else|fn|let|pub|import|extern|type|match)\\b"
+          "match": "\\b(if|else|fn|let|pub|import|extern|type|match|where)\\b"
         },
         {
           "name": "keyword.operator.arrow.kestrel",
